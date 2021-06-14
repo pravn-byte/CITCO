@@ -15,7 +15,7 @@ Setup the environment:
     
     Create S3 bucket to store the docker file and app details 
         aws s3 mb s3://<unique bucket name> --region us-east-1
-        aws s3 sync web
+        aws s3 sync web s3://<unique bucket name>
         Note: Update the bucket name in the main.tf at 187.
     Run the terraform scripts to provision complete infra
         terraform init
